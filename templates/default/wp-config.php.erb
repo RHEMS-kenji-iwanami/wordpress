@@ -1,0 +1,45 @@
+<?php
+
+/** WordPress のためのデータベース名 */
+define('DB_NAME', '<%= @db_name %>');
+
+/** MySQL データベースのユーザー名 */
+define('DB_USER', '<%= @username %>');
+
+/** MySQL データベースのパスワード */
+define('DB_PASSWORD', '<%= @password %>');
+
+/** MySQL のホスト名 */
+define('DB_HOST', 'localhost');
+
+/** データベースのテーブルを作成する際のデータベースの文字セット */
+define('DB_CHARSET', 'utf8');
+
+/** データベースの照合順序 (ほとんどの場合変更する必要はありません) */
+define('DB_COLLATE', '');
+
+define('AUTH_KEY',         '3edab8df-f90d-4918-8673-ec68141c8d51');
+define('SECURE_AUTH_KEY',  '17c4f3a1-afa2-47bb-9dde-3a767d63ff18');
+define('LOGGED_IN_KEY',    'aefc3c0f-65d9-42e5-b867-edfbc83c82af');
+define('NONCE_KEY',        'e586889b-55c4-449e-8a72-906e347d29c6');
+define('AUTH_SALT',        '8996bce8-f1bc-4bdf-98a7-3ff28615dca4');
+define('SECURE_AUTH_SALT', '9725d662-a0fe-46f4-b8d0-8db54b6ba725');
+define('LOGGED_IN_SALT',   '86085b02-9574-49c5-b9ee-4f99d13234b9');
+define('NONCE_SALT',       '25344e19-aae5-4a5e-9775-93436be8a8d3');
+
+/**#@-*/
+
+$table_prefix  = 'wp_';
+
+define('WP_DEBUG', false);
+
+/* 編集が必要なのはここまでです ! WordPress でブログをお楽しみください。 */
+
+/** Absolute path to the WordPress directory. */
+if ( !defined('ABSPATH') )
+	define('ABSPATH', dirname(__FILE__) . '/');
+
+/** Sets up WordPress vars and included files. */
+require_once(ABSPATH . 'wp-settings.php');
+
+?>

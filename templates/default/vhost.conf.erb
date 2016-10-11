@@ -1,0 +1,9 @@
+<VirtualHost *:80>
+    ServerName <%= @servername %>
+    ServerAdmin kodomo898@gmail.com
+    DocumentRoot <%= @DocumentRoot %>wordpress
+
+    LogLevel warn
+    ErrorLog /var/log/httpd/mail_error.log
+    CustomLog /var/log/httpd/mail_access.log combined
+</VirtualHost>
